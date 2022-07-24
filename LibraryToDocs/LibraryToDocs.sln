@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryToDocs.API", "LibraryToDocs.API\LibraryToDocs.API.csproj", "{A45697B8-8E3C-4EB0-946F-F29EB3853026}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryToDocs.Model", "LibraryToDocs.Model\LibraryToDocs.Model.csproj", "{026D7EEC-D321-4A2A-A145-9E3B0BEAE922}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A45697B8-8E3C-4EB0-946F-F29EB3853026}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A45697B8-8E3C-4EB0-946F-F29EB3853026}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A45697B8-8E3C-4EB0-946F-F29EB3853026}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A45697B8-8E3C-4EB0-946F-F29EB3853026}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026D7EEC-D321-4A2A-A145-9E3B0BEAE922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026D7EEC-D321-4A2A-A145-9E3B0BEAE922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026D7EEC-D321-4A2A-A145-9E3B0BEAE922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026D7EEC-D321-4A2A-A145-9E3B0BEAE922}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5A325E2B-7E25-433D-AD19-6F033D273FA4}
+	EndGlobalSection
+EndGlobal
