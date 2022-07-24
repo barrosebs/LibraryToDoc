@@ -11,10 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Enum\" />
-    <Folder Include="Interface\" />
-    <Folder Include="Data\" />
-    <Folder Include="Service\" />
+    <ProjectReference Include="..\LibraryToDocs.Model\LibraryToDocs.Model.csproj" />
   </ItemGroup>
 
 </Project>
