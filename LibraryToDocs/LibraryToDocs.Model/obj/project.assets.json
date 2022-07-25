@@ -8,19 +8,23 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Eduardo\\.nuget\\packages\\": {}
+    "C:\\Users\\eduardo.santos\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj",
+      "projectUniqueName": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj",
       "projectName": "LibraryToDocs.Model",
-      "projectPath": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj",
-      "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
-      "outputPath": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\obj\\",
+      "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj",
+      "packagesPath": "C:\\Users\\eduardo.santos\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Eduardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\eduardo.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
