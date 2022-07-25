@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryToDocs.Model.FileStructo
+namespace LibraryToDocs.Model
 {
     public class Macroproesso
     {
