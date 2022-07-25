@@ -1,20 +1,114 @@
 {
   "format": 1,
   "restore": {
-    "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\LibraryToDocs.API.csproj": {}
+    "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\LibraryToDocs.API.csproj": {}
   },
   "projects": {
-    "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\LibraryToDocs.API.csproj": {
+    "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDoc.Service\\LibraryToDoc.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\LibraryToDocs.API.csproj",
-        "projectName": "LibraryToDocs.API",
-        "projectPath": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\LibraryToDocs.API.csproj",
-        "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\obj\\",
+        "projectUniqueName": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDoc.Service\\LibraryToDoc.Service.csproj",
+        "projectName": "LibraryToDoc.Service",
+        "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDoc.Service\\LibraryToDoc.Service.csproj",
+        "packagesPath": "C:\\Users\\eduardo.santos\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDoc.Service\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Eduardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eduardo.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AWSSDK.S3": {
+              "target": "Package",
+              "version": "[3.7.9.30, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.13.0, )"
+            },
+            "Google.Apis.Auth": {
+              "target": "Package",
+              "version": "[1.57.0, )"
+            },
+            "Google.Cloud.Storage.V1": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\LibraryToDocs.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\LibraryToDocs.API.csproj",
+        "projectName": "LibraryToDocs.API",
+        "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\LibraryToDocs.API.csproj",
+        "packagesPath": "C:\\Users\\eduardo.santos\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eduardo.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +122,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj": {
-                "projectPath": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj"
+              "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDoc.Service\\LibraryToDoc.Service.csproj": {
+                "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDoc.Service\\LibraryToDoc.Service.csproj"
+              },
+              "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Configurations\\LibraryToDocs.Configurations.csproj": {
+                "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Configurations\\LibraryToDocs.Configurations.csproj"
+              },
+              "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Data\\LibraryToDocs.Data.csproj": {
+                "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Data\\LibraryToDocs.Data.csproj"
+              },
+              "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj": {
+                "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj"
               }
             }
           }
@@ -44,6 +147,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
@@ -67,21 +174,169 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj": {
+    "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Configurations\\LibraryToDocs.Configurations.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj",
-        "projectName": "LibraryToDocs.Model",
-        "projectPath": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj",
-        "packagesPath": "C:\\Users\\Eduardo\\.nuget\\packages\\",
-        "outputPath": "D:\\dev\\projeto\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\obj\\",
+        "projectUniqueName": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Configurations\\LibraryToDocs.Configurations.csproj",
+        "projectName": "LibraryToDocs.Configurations",
+        "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Configurations\\LibraryToDocs.Configurations.csproj",
+        "packagesPath": "C:\\Users\\eduardo.santos\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Configurations\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Eduardo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\eduardo.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Data\\LibraryToDocs.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Data\\LibraryToDocs.Data.csproj",
+        "projectName": "LibraryToDocs.Data",
+        "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Data\\LibraryToDocs.Data.csproj",
+        "packagesPath": "C:\\Users\\eduardo.santos\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eduardo.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Configurations\\LibraryToDocs.Configurations.csproj": {
+                "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Configurations\\LibraryToDocs.Configurations.csproj"
+              },
+              "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj": {
+                "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "DevSnap.CommonLibrary": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj",
+        "projectName": "LibraryToDocs.Model",
+        "projectPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\LibraryToDocs.Model.csproj",
+        "packagesPath": "C:\\Users\\eduardo.santos\\.nuget\\packages\\",
+        "outputPath": "C:\\Dev\\projetos\\LibraryToDoc\\LibraryToDocs\\LibraryToDocs.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\eduardo.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -121,7 +376,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

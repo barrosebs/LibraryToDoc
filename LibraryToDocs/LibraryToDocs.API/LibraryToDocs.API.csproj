@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="10.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\LibraryToDoc.Service\LibraryToDoc.Service.csproj" />
+    <ProjectReference Include="..\LibraryToDocs.Configurations\LibraryToDocs.Configurations.csproj" />
+    <ProjectReference Include="..\LibraryToDocs.Data\LibraryToDocs.Data.csproj" />
     <ProjectReference Include="..\LibraryToDocs.Model\LibraryToDocs.Model.csproj" />
   </ItemGroup>
 
