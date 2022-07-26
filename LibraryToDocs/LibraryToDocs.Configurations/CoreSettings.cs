@@ -70,9 +70,9 @@ namespace LibraryToDocs.Configurations
                 var file = GetFileName();
                 string name = Assembly.GetExecutingAssembly().Location;
                 string folders = Directory.GetCurrentDirectory();
+                configPath = Path.Combine(folders +@"\Configuration\", file);
                 //foreach (var f in folders)
                 //{
-                //    configPath = Path.Combine(f, file);
                 //}
                 // var configPath = Path.Combine(path, file);
 
