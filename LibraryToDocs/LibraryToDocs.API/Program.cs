@@ -5,6 +5,7 @@ using LibraryToDocs.Service.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using MediatR;
+using System.Diagnostics;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -70,9 +71,10 @@ switch (appSettings.FileDataSettings.FileDataStorage)
         break;
 }
 
+builder.Services.AddIdentityConfiguration();
 
-var assembly = AppDomain.CurrentDomain.Load("Core.Service");
-//builder.Services.AddMediatR(assembly);
+var assembly = AppDomain.CurrentDomain.Load("LibraryToDoc.Service");
+builder.Services.AddMediatR(assembly);
 
 // configure jwt authentication
 var key = System.Text.Encoding.UTF8.GetBytes(appSettings.Jwt.Key);
@@ -85,8 +87,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthorization();
+app.UseRouting();
 
-app.MapControllers();
+app.UseAuthConfiguration();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllers();
+});
+
 
 app.Run();
