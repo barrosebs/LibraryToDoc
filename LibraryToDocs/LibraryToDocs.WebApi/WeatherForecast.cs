@@ -1,4 +1,4 @@
-namespace LibraryToDocs.API
+namespace LibraryToDocs.WebApi
 {
     public class WeatherForecast
     {
