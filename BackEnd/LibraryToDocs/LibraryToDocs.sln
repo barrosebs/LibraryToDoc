@@ -5,7 +5,9 @@ VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{6E126125-5C5C-4233-8094-090D8485A69E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryToDocs.WebAPI", "LibraryToDocs.WebAPI\LibraryToDocs.WebAPI.csproj", "{178A2176-3D84-4A65-8E7F-52FFD61A3FCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryToDocs.WebAPI", "LibraryToDocs.WebAPI\LibraryToDocs.WebAPI.csproj", "{178A2176-3D84-4A65-8E7F-52FFD61A3FCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FronEnd", "FronEnd", "{1CE90A73-C09C-46F8-A934-E91E4716F6AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
