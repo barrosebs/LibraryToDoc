@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http'
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -17,6 +17,7 @@ import {MatSidenavModule} from '@angular/material/sidenav'
 import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatIconModule} from '@angular/material/icon'
 import {MatSnackBarModule} from '@angular/material/snack-bar'
+import { TokenInterceptor } from './services/interceptors/token.interceptor';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,9 @@ import {MatSnackBarModule} from '@angular/material/snack-bar'
     MatIconModule,
     MatSnackBarModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
 

@@ -6,10 +6,10 @@ import { UsuarioService } from '../../services/usuario.service';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
-  formLogin: FormGroup;
+  formLogin!: FormGroup;
   constructor(private formBuilder: FormBuilder,
               private usuarioService: UsuarioService,
               private snackBar: MatSnackBar) { }

@@ -20,6 +20,7 @@ constructor(private httpClient: HttpClient,
         localStorage.setItem('usuario', btoa(JSON.stringify(resposta['usuario'])));
         this.router.navigate(['']);
       }));
+      debugger;
       return this.mockUsuarioLogin(usuario).pipe(tap((resposta) => {
         if(!resposta.sucesso) return;
         localStorage.setItem('token', btoa(JSON.stringify("TokenQueSeriaGeradoPelaAPI")));
@@ -29,7 +30,7 @@ constructor(private httpClient: HttpClient,
   }
   private mockUsuarioLogin(usuario: IUsuario): Observable<any> {
     var retornoMock: any = [];
-    if(usuario.email === "hello@balta.io" && usuario.senha == "123"){
+    if(usuario.email === "barrosebs@gmail.com" && usuario.senha == "123"){
       retornoMock.sucesso = true;
       retornoMock.usuario = usuario;
       retornoMock.token = "TokenQueSeriaGeradoPelaAPI";
@@ -43,21 +44,25 @@ constructor(private httpClient: HttpClient,
       localStorage.clear();
       this.router.navigate(['login']);
   }
+
   get obterUsuarioLogado(): IUsuario {
     return localStorage.getItem('usuario')
-      ? JSON.parse(atob(localStorage.getItem('usuario')))
+      ? JSON.parse(atob(localStorage.getItem('usuario')!))
       : null;
   }
+
   get obterIdUsuarioLogado(): string {
     return localStorage.getItem('usuario')
-      ? (JSON.parse(atob(localStorage.getItem('usuario'))) as IUsuario).id
-      : null;
+      ? (JSON.parse(atob(localStorage.getItem('usuario')!)) as IUsuario).id
+      : null!;
   }
+
   get obterTokenUsuario(): string {
     return localStorage.getItem('token')
-      ? JSON.parse(atob(localStorage.getItem('token')))
+      ? JSON.parse(atob(localStorage.getItem('token')!))
       : null;
   }
+
   get logado(): boolean {
     return localStorage.getItem('token') ? true : false;
   }

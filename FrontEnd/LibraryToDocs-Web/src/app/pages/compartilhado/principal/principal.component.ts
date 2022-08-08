@@ -1,3 +1,4 @@
+import { UsuarioService } from './../../../services/usuario.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./principal.component.css']
 })
 export class PrincipalComponent implements OnInit {
-
-  constructor() { }
-
+  constructor(private usuarioService: UsuarioService) { }
   ngOnInit(): void {
+  }
+  deslogar(){
+    this.usuarioService.deslogar();
   }
 
 }
