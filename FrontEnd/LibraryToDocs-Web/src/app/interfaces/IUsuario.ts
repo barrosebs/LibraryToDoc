@@ -1,5 +1,7 @@
 export interface IUsuario{
   id: string,
   email: string;
-  senha: string
+  password: string;
+  token: string;
+  expiration: Date;
 }

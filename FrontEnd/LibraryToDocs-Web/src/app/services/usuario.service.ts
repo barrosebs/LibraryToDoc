@@ -5,22 +5,33 @@ import { Observable, of } from 'rxjs';
 import { tap } from 'rxjs/operators';
 import { environment } from 'src/environments/environment';
 import { IUsuario } from '../interfaces/IUsuario';
-const apiUrlUsuario = environment.ApiUrl + "Usuario";
+const apiUrlUsuario = environment.ApiUrl;
 @Injectable({
   providedIn: 'root'
 })
 export class UsuarioService {
 constructor(private httpClient: HttpClient,
             private router: Router) { }
-  logar(usuario: IUsuario) : Observable<any> {
+  logar(usuario: IUsuario) {
     return this.httpClient.post<any>(apiUrlUsuario + "/login", usuario).pipe(
+      tap(resp => {
+          if (!resp.sucesso) {
+            localStorage.setItem('token', btoa(JSON.stringify(resp['token'])));
+            localStorage.setItem('expiration', btoa(JSON.stringify(resp['expiration'])));
+            this.router.navigate(['']);
+          }
+        }
+      )
+    );
+
+    /*     debugger;
+    if(!resposta.sucesso) return;
+    .pipe(
       tap((resposta) => {
-        if(!resposta.sucesso) return;
         localStorage.setItem('token', btoa(JSON.stringify(resposta['token'])));
-        localStorage.setItem('usuario', btoa(JSON.stringify(resposta['usuario'])));
+        localStorage.setItem('expiration', btoa(JSON.stringify(resposta['expiration'])));
         this.router.navigate(['']);
       }));
-      debugger;
       return this.mockUsuarioLogin(usuario).pipe(tap((resposta) => {
         if(!resposta.sucesso) return;
         localStorage.setItem('token', btoa(JSON.stringify("TokenQueSeriaGeradoPelaAPI")));
@@ -30,7 +41,7 @@ constructor(private httpClient: HttpClient,
   }
   private mockUsuarioLogin(usuario: IUsuario): Observable<any> {
     var retornoMock: any = [];
-    if(usuario.email === "barrosebs@gmail.com" && usuario.senha == "123"){
+    if(usuario.Username === "barrosebs@gmail.com" && usuario.Password == "123"){
       retornoMock.sucesso = true;
       retornoMock.usuario = usuario;
       retornoMock.token = "TokenQueSeriaGeradoPelaAPI";
@@ -38,7 +49,7 @@ constructor(private httpClient: HttpClient,
     }
     retornoMock.sucesso = false;
     retornoMock.usuario = usuario;
-    return of(retornoMock);
+    return of(retornoMock);*/
   }
   deslogar() {
       localStorage.clear();

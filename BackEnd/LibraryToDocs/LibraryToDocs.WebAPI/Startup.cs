@@ -33,6 +33,7 @@ namespace LibraryToDocs.WebAPI
         {
 
             services.AddControllers();
+            services.AddCors();
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             // For Identity
@@ -110,6 +111,10 @@ namespace LibraryToDocs.WebAPI
 
             app.UseAuthentication();
             app.UseAuthorization();
+
+            app.UseCors(access => access.AllowAnyHeader()
+                                        .AllowAnyMethod()
+                                        .AllowAnyOrigin());
 
             app.UseEndpoints(endpoints =>
             {

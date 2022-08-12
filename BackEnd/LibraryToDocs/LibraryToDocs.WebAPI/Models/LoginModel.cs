@@ -5,8 +5,10 @@ namespace LibraryToDocs.WebAPI.Models
     public class LoginModel
     {
         [Required(ErrorMessage = "Nome do usuário é obrigatório")]
-        public string Username { get; set; }
+        [Display(Name = "email")]
+        public string Email { get; set; }
         [Required(ErrorMessage = "Senha é obrigatório")]
+        [Display(Name = "senha")]
         public string Password { get; set; }
     }
 }

@@ -83,7 +83,7 @@ namespace LibraryToDocs.WebAPI.Controllers
         [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginModel model)
         {
-            var user = await userManager.FindByNameAsync(model.Username);
+            var user = await userManager.FindByEmailAsync(model.Email);
             if (user != null && await userManager.CheckPasswordAsync(user, model.Password))
             {
                 var userRoles = await userManager.GetRolesAsync(user);
@@ -115,7 +115,13 @@ namespace LibraryToDocs.WebAPI.Controllers
                     expiration = token.ValidTo
                 });
             }
-            return Unauthorized();
+            return Unauthorized(
+                new
+                {
+                    code = StatusCodes.Status401Unauthorized,
+                    message = new InvalidCastException("Usuário não autorizado!")
+        }
+                );
         }
 
     }

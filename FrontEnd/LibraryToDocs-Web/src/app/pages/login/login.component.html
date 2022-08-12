@@ -8,21 +8,21 @@
           <input
             type="email"
             matInput
-            formControlName="email"
-            placeholder="Ex. perukas@example.com"
+            formControlName="Email"
+            placeholder="Ex. barrosebs@gmail.com"
           />
           <mat-error
             *ngIf="
-              formLogin.get('email')?.hasError('email') &&
-              formLogin.get('email')?.touched
+              formLogin.get('Email')?.hasError('Email') &&
+              formLogin.get('Email')?.touched
             "
           >
             Por favor informe um email válido
           </mat-error>
           <mat-error
             *ngIf="
-              formLogin.get('email')?.hasError('required') &&
-              formLogin.get('email')?.touched
+              formLogin.get('Email')?.hasError('required') &&
+              formLogin.get('Email')?.touched
             "
           >
             Email é <strong>obrigatório</strong>
@@ -30,10 +30,11 @@
         </mat-form-field>
         <mat-form-field appearance="outline" class="form-field-full">
           <mat-label>Senha</mat-label>
-          <input type="password" matInput formControlName="senha" />
+          <input type="password" matInput formControlName="Password" />
           <mat-error
             *ngIf="
-              formLogin.get('senha')?.invalid && formLogin.get('senha')?.touched
+              formLogin.get('Password')?.invalid &&
+              formLogin.get('Password')?.touched
             "
             >Senha é
             <strong>obrigatória</strong>
